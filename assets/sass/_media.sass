@@ -1,0 +1,144 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+// ≥1400px - до max-width: 1400px
++media-breakpoint-down(xxl)
+	.navbar-expand-lg
+		.navbar-nav 
+			a
+				&.nav-link
+					padding-left: 1em
+					padding-right: 1em
+
+// ≥1200px - до max-width: 1200px
++media-breakpoint-down(xl)
+	.navbar-expand-lg
+		.navbar-nav 
+			a
+				&.nav-link
+					padding-left: .6em
+					padding-right: .6em
+	header 
+		.h-2-bg
+			padding-top: 3rem
+	h1
+		font-size: 2.5rem;
+	a
+		&.btn
+			min-width: auto;
+
+// ≥992px - до max-width: 992px
++media-breakpoint-down(lg)
+	body
+		padding-bottom: 3em
+	.navbar-collapse
+		height: 100vh
+		a
+			&.btn-outline-primary
+				padding: 1em 2.2em
+				background-color: transparent
+				color: $white
+				border-color: $white
+				margin: .4em auto 0 auto !important
+	header
+		background: url('../img/img-svg/sq-ico-1.svg');
+		background-repeat: no-repeat;
+		background-size: 150px;
+		background-position: 110% 35%;
+		.h-2-bg
+			padding-top: 2.5em
+			background: url('../img/img-svg/sq-ico-2.svg')
+			background-repeat: no-repeat
+			background-size: 150px
+			background-position: -30px 0px
+			.text-center 
+				p
+					font-size: 0.8em
+	
+		.h-3-bg
+			background: url('../img/img-svg/sq-ico-3.svg');
+			background-repeat: no-repeat;
+			background-size: 150px;
+			background-position: -40px bottom;
+			.text-center 
+				p 
+					font-size: 1.2rem
+					padding-top: 1rem
+					padding-bottom: 1rem
+		.h-4-bg
+			background: url('../img/img-svg/sq-ico-4.svg')
+			background-repeat: no-repeat
+			background-size: 150px
+			background-position: 110% top
+			.fab, .fab:hover
+				font-size: 2rem
+
+	h1
+		font-size: 2em
+	.navbar-nav 
+		a
+			&.nav-link
+				font-size: 1.5em
+				margin-bottom: 0.2em
+		/*FIX раскрытый dropdown на мобилках */
+		.dropdown-menu
+			display: block
+			background-color: transparent
+			border: 0
+			a
+				text-align: center
+				font-size: 1.4em
+				margin-bottom: 0.2em
+				background: transparent
+	.dropdown-item
+		&:hover, &:focus
+			color: #FFF
+			background-color: transparent
+            
+
+// ≥768px
++media-breakpoint-down(md)
+	a
+		&.btn
+			min-width: 237px
+	h2
+		font-size: 1.6em
+	header
+		background-size: 100px
+		.h-2-bg, .h-3-bg, .h-4-bg
+				background-size: 100px
+		.h-3-bg
+			.text-center
+				p
+					font-size: 1em
+
+
+// ≥576px
++media-breakpoint-down(sm)
+	h1
+		font-size: 1.7em
+
+// <576px
++media-breakpoint-down(xs)
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px - от min-width: 768px
++media-breakpoint-up(md)
+
+// ≤992px - от min-width: 992px
++media-breakpoint-up(lg)
+
+// ≤1200px - от min-width: 1200px
++media-breakpoint-up(xl)
+	.container
+		max-width: 1420px
+	header 
+		.h-2-bg
+			padding-top: 5rem
+
+// ≤1400px - от min-width: 1400px
++media-breakpoint-up(xxl)

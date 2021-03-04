@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<meta name="theme-color" content="#209CDC">
+
+	<link rel="alternate" href="https://myswimming.by/" hreflang="ru" />
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+	<title>Верстка MySwimming</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://myswimming.by/">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<link rel="icon" sizes="192x192" href="assets/img/icons/apple-touch-icon-192x192.png">
+	<link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/icons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/apple-touch-icon-152x152.png ">
+	<link rel="apple-touch-icon" sizes="192х192" href="assets/img/icons/apple-touch-icon-192x192.png">
+	<meta name="apple-mobile-web-app-title" content="Школа Плавания">
+
+<!-- 
+	<link rel="preload" href="assets/fonts/gilroy/Gilroyextrabold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="assets/fonts/gilroy/Gilroylight.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="assets/fonts/museosans/MuseoSansCyrl-500.woff" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="assets/fonts/fontawesome-pro-5.14.0-web/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="assets/fonts/fontawesome-pro-5.14.0-web/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="assets/fonts/fontawesome-pro-5.14.0-web/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+ -->
+	<link rel="stylesheet" href="assets/css/main.min.css">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg mb-2 fixed-top bg-white">
+	<div class="container" id="fixWidth">
+	
+		<a class="navbar-brand" href="/" title="Школа Плавания MySwimming">
+			<picture>
+				<source type="image/webp" srcset="assets/img/webp/shkola-plaveniya-logo.webp">
+				<source type="image/png" srcset="assets/img/shkola-plaveniya-logo.png">
+				<img src="assets/img/shkola-plaveniya-logo.png" class="navbar-brand__color" alt="Школа Плавания MySwimming">
+			</picture>
+			<picture>
+				<source type="image/webp" srcset="assets/img/webp/shkola-plaveniya-logo-wb.webp">
+				<source type="image/png" srcset="assets/img/shkola-plaveniya-logo-wb.png">
+				<img src="assets/img/shkola-plaveniya-logo-wb.png" class="navbar-brand__wb" alt="Школа Плавания MySwimming">
+			</picture>
+		</a>
+
+		<div class="navbar-toggler" id="navbarToggler">
+			<input type="checkbox" id="menuBurger" class="menuBurger visuallyHidden">
+			<label for="menuBurger" data-bs-toggle="collapse" data-bs-target="#navbarsMswimming" aria-controls="navbarsMswimming" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span class="bar bar1"></span>
+					<span class="bar bar2"></span>
+					<span class="bar bar3"></span>
+				</div>
+			</label>
+		</div>
+
+		<div class="collapse navbar-collapse " id="navbarsMswimming">
+	
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="/trenera-po-plavaniu/" title="Тренеры Школы Плавания">Тренеры</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/raspisnie-plavaniya/" title="Расписание занятий по плаванию">Расписание <span class="d-lg-none d-xl-inline">/ Цены</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/basseyni-minsk/" title="Бассейны">Бассейны</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/informaciya-po-plavaniu/" title="Информация от Школы Плавания">Информация</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/contacts/" title="Контакты">Контакты</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="dropdownTlf" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-phone-alt"></i>
+						<span class="d-lg-none d-xl-inline"> +375</span> (29) 898 56 38
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownTlf">
+						<a href="tel:+375298985638" class="dropdown-item konv_mts" onclick="yaCounter45395127.reachGoal('CallMeMTS'); return true;">
+							<i class="tel tel-mts"></i>+375 (29) 898 56 38
+						</a>
+						<a href="tel:+375293885638" class="dropdown-item konv_velcom" onclick="yaCounter45395127.reachGoal('CallMeVELCOM'); return true;">
+							<i class="tel tel-vlc"></i>+375 (29) 388 56 38
+						</a>
+					</div>
+				</li>
+			</ul>
+
+			<a href="/kak-oplatit-shkolu-plavaniya/" class="btn btn-lg btn-outline-primary ms-4" title="Оплатить занятия в Школе Плавания">Оплатить<span class="d-lg-none d-xl-inline"> абонемент</span></a>
+
+		</div>
+
+	</div>
+</nav>
+<!-- / NAV -->
+
+<!-- HEADER -->
+<header>
+
+	<div class="container-fluid h-2-bg">
+		<div class="container">
+
+			<div class="row no-gutters justify-content-center">
+
+				<div class="d-none d-lg-block col-lg-2">
+					<div class="parallax bg-lt float-end" data-prl>
+						<div class="bg-ico ico-img-1" data-depth="0.4"></div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-8 text-center">
+					<div>
+						<p>
+							Лучшие тренеры по плаванию в Минске
+						</p>
+						<h1>
+							Школа Плавания<br>
+							Мой плавательный центр
+						</h1>
+					</div>
+				</div>
+
+				<div class="d-none d-lg-block col-lg-2">
+					<div class="parallax bg-lr" data-prl>
+						<div class="bg-ico ico-img-2" data-depth="0.4"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container-fluid h-3-bg">
+		<div class="container">
+
+			<div class="row no-gutters justify-content-md-center">
+
+				<div class="d-none d-lg-block col-lg-3">
+					<div class="parallax bg-lr float-end" data-prl>
+						<div class="bg-ico ico-img-3" data-depth="1.6"></div>
+					</div>
+				</div>
+	
+				<div class="col-md-12 col-lg-6 text-center pb-4">
+					<p>Мы создаём чемпионов</p>
+					
+					<a data-toggle="modal" data-frame-load="zvk_myswm" data-target="#modalZV" class="btn btn-lg btn-primary mb-2 mx-2" title="Записаться в Школу Плавания">Записаться в группу</a>
+					<a href="/contacts/" class="btn btn-lg btn-outline-primary mb-2 mx-2" title="Подробнее о Школе Плавания">Подробнее о школе</a>
+		
+				</div>
+
+				<div class="d-none d-lg-block col-lg-3">
+					<div class="parallax bg-lt" data-prl>
+						<div class="bg-ico ico-img-4" data-depth="1.6"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+        <div class="container-fluid h-4-bg">
+        <div class="container">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-2 col-lg-1 text-center">
+                    <a href="viber://chat?number=375298985638" class="" title="Viber Школы плавания"><i class="fab fa-viber"></i></a>
+                </div>
+                <div class="col-2 col-lg-1 text-center">
+                    <a href="whatsapp://send?phone=+375298985638" class="" title="Whatsapp Школы плавания"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="col-2 col-lg-1 text-center">
+                    <a href="tg://resolve?domain=myswimming" class="" title="Telegram Школы плавания"><i class="fab fa-telegram"></i></a>
+                </div>
+        
+            </div>
+        </div>
+        </div>
+
+</header>
+
+
+
+<div class="container c-about">
+	111<br><br>
+	222<br><br>
+	333<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+	dddd<br><br>
+
+</div>
+
+<div class="text-warning ">TEST WARNING</div>
+
+<!-- ****************************************************** SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="node_modules/parallax-js/dist/parallax.min.js"></script>
+<script src="assets/js/script.js" ></script>
+
+</body>
+</html>
