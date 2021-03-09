@@ -12,12 +12,11 @@
 
 // ≥1200px - до max-width: 1200px
 +media-breakpoint-down(xl)
-	.navbar-expand-lg
-		.navbar-nav 
-			a
-				&.nav-link
-					padding-left: .6em
-					padding-right: .6em
+	nav
+		a
+			&.nav-link
+				padding-left: .6em  !important
+				padding-right: .6em  !important
 	header 
 		.h-2-bg
 			padding-top: 3rem
@@ -94,6 +93,15 @@
 		&:hover, &:focus
 			color: #FFF
 			background-color: transparent
+	.footer
+		&__logo
+			margin-top: .5rem
+			margin-right: .5rem
+			float: left
+		p
+			&.text-start
+				font-size: .6
+
             
 
 // ≥768px
@@ -111,6 +119,41 @@
 			.text-center
 				p
 					font-size: 1em
+	.section
+		&__swimmer
+			background-position: 50% top
+			text-align: center
+			.align-self-center
+				padding: 2rem
+	.footer
+		text-align: center
+		.footer__menuBlock
+			margin-bottom: 1.3rem
+			h6
+				font-size: 1.3rem
+				color: $blue
+				font-weight: 800
+				position: relative
+				cursor: pointer
+
+				&:after
+					content: "\f078"
+					font-family: 'Font Awesome 5 Pro'
+					right: 20px
+					position: absolute
+					top: 0
+			ul
+				display: none
+			&.showMenu
+				h6
+					&:after
+						content: "\f077"
+				ul
+					display: block
+					a
+						font-size: 1rem
+					
+			
 
 
 // ≥576px

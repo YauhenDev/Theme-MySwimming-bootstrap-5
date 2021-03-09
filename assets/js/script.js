@@ -6,7 +6,10 @@ window.addEventListener('DOMContentLoaded', () => {
 	const nav = document.querySelector("nav.navbar"),
 		  navButton = nav.querySelector('#menuBurger'),
 		  navContainer = nav.querySelector("#fixWidth"),
-		  navMobileMenu = navContainer.querySelector("#navbarsMswimming");
+		  navMobileMenu = navContainer.querySelector("#navbarsMswimming"),
+		  scene = document.querySelectorAll('[data-prl]'),
+		  footer = document.querySelector("footer"),
+		  footerToggle = footer.querySelectorAll(".footer__menuBlock");
 
 	// Подмениваем классы navbara и бургер
 	function tglMenu() {
@@ -22,7 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
 			document.body.style.overflow = '';
 			navMobileMenu.classList.remove('show');
 		}
-
 	}
 
 	navButton.addEventListener('click', tglMenu);
@@ -32,8 +34,20 @@ window.addEventListener('DOMContentLoaded', () => {
         if (e.code === 'Escape' && nav.classList.contains('bg-info') && navButton.checked) {
 			tglMenu();
 			navButton.checked = false;
-        }
-    })
+		}
+    });
+
+	// FOOTER *******************************
+	//включаем показ меню в футере
+	footerToggle.forEach(item => {
+		item.addEventListener('click', () => {
+			if ( document.documentElement.clientWidth < 768 && item.classList.contains('showMenu')) {
+				item.classList.remove('showMenu');
+			} else if (document.documentElement.clientWidth < 768) {
+				item.classList.add('showMenu');
+			} 
+		});
+	});
 
 	//Проверяем ширину экрана. Подмениваем классы
 	function windowWidth() {
@@ -50,19 +64,25 @@ window.addEventListener('DOMContentLoaded', () => {
 		if ( document.documentElement.clientWidth > 992 && nav.classList.contains('bg-info') && navButton.checked) {
 			tglMenu();
 			navButton.checked = false;
-		} 
+		}
 	};
 	windowWidth();
 
 	//Прослушаваем постоянно ширину экрана.
 	window.addEventListener('resize', windowWidth);
 	
-	// Запускаем паралакс для элементов
-	const scene = document.querySelectorAll('[data-prl]');
+	// Запускаем паралакс для найденных элементов
 	scene.forEach((item) => {
-		//console.log(item);
 		const parallax = new Parallax(item);
 	});
 
+	//активация анимации wow.js
+	const wow = new WOW(/*{
+		boxClass:     'wow',      // default
+		offset:       0,          // default
+		mobile:       true,       // default
+		live:         true        // default
+	  }*/);
+	  wow.init();
 
 });

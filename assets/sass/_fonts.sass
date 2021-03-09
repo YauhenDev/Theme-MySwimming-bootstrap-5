@@ -1,5 +1,22 @@
-@import "_mixins/font-face"
+/* fontawesome */
+$fa-font-path:  "../fonts/fontawesome-pro-5.14.0-web/webfonts" !default;
+@import "../fonts/fontawesome-pro-5.14.0-web/scss/fontawesome.scss"
+@import "../fonts/fontawesome-pro-5.14.0-web/scss/brands.scss"
+@import "../fonts/fontawesome-pro-5.14.0-web/scss/solid.scss"
+@import "../fonts/fontawesome-pro-5.14.0-web/scss/regular.scss"
 
-+font-face("Gilroy", "../fonts/gilroy/Gilroylight") 
-+font-face("Gilroy", "../fonts/gilroy/Gilroyextrabold") 
+
+/** font-family: 'Gilroy'
+    src: local('../fonts/gilroy/Gilroy Light')
+	local('../fonts/gilroy/Gilroy-Light')
+	url('../fonts/gilroy/Gilroylight.woff2') format('woff2')
+	url('../fonts/gilroy/Gilroylight.woff') format('woff')
+	url('../fonts/gilroy/Gilroylight.ttf') format('truetype')
+    font-weight: 300
+    font-style: normal
+	font-display: swap **/
+
+@import "_mixins/font-face"
++font-face("Gilroy", "../fonts/gilroy/Gilroylight", 300) 
++font-face("Gilroy", "../fonts/gilroy/Gilroyextrabold", 800) 
 +font-face("Museo Sans Cyrl 500", "../fonts/museosans/MuseoSansCyrl-500") 
