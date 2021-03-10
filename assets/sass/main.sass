@@ -3,6 +3,7 @@
 @import "libs"
 @import "parallax"
 @import url('../../node_modules/animate.css/animate.min.css');
+@import url('../../node_modules/swiper/swiper-bundle.min.css');
 
 body
 	padding-top: 6rem
@@ -37,19 +38,6 @@ a
 	&.bs-0
 		&:hover
 			background-size: 0
-
-/** a
-	color: $blue
-	text-decoration: none
-	&:hover
-		color: $info
-		text-decoration: none
-	&.btn
-		text-decoration: none
-		font-size: 1rem
-		padding: 1rem
-		min-width: 237px
-		border-radius: .6rem **/
 
 /* H ******************************** */
 h1, h2, h3, h4, h5, h6
@@ -223,20 +211,88 @@ header
 			&:hover
 				font-size: 2.8rem
 
-/**/
+
 .section
+	/* Индивидуалки ***** */
 	&__swimmer
 		background-image: url(../img/webp/fon.webp)
 		background-repeat: no-repeat
 		background-position: 50% 70px
 		background-size: cover
-		padding: 0
+		padding: 2rem 0
 		img
 			width: 100%
 			max-width: 497px
+	/* Тренера ***** */
+	&__coach
+		//min-height: 900px
+		padding: 2rem 0 4rem 0
+		margin-bottom: 4rem
+		background: rgb(237,249,255)
+		background: -moz-linear-gradient(0deg, rgba(237,249,255,0) 0%, rgba(237,249,255,1) 100%)
+		background: -webkit-linear-gradient(0deg, rgba(237,249,255,0) 0%, rgba(237,249,255,1) 100%)
+		background: linear-gradient(0deg, rgba(237,249,255,0) 0%, rgba(237,249,255,1) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#edf9ff",endColorstr="#edf9ff",GradientType=1)
+
+
+/**/
+#map-index
+	height: 300px;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .1);
+	
+	background-image: url(../img/webp/map.webp);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	padding: 0;
+	a
+		display: block
+		height: 300px
+#mapModalCenter
+	img
+		height: 60px
+		max-width: 80px
+
+/* IE FIX webp */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
-		.section__swimmer 
-			background-image: url(../img/fon.jpg)
+	.section__swimmer 
+		background-image: url(../img/fon.jpg)
+	#map-index
+		background-image: url(../img/map.png)
+
+
+/* Swiper */
+.swiper
+	&-zaslugi
+		min-height: 85px
+		font-size: 1rem
+	&-container
+		width: 100%
+		height: 100%
+	&-slide
+		text-align: center;
+		font-size: 18px;
+		/* Center slide text vertically */
+		display: -webkit-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		-webkit-justify-content: center
+		justify-content: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		-webkit-align-items: center
+		align-items: center
+	&-pagination-bullet 
+		background: #279BE7
+	&-button-next, &-button-prev
+		position: absolute
+		top: auto
+		bottom: 20%
 
 /* FOOTER ************************** */
 .footer

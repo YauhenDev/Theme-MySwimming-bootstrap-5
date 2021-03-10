@@ -21,10 +21,13 @@
 		.h-2-bg
 			padding-top: 3rem
 	h1
-		font-size: 2.5rem;
+		font-size: 2.5rem
 	a
 		&.btn
-			min-width: auto;
+			min-width: auto
+	.section
+		&__coach
+			//min-height: 820px
 
 // ≥992px - до max-width: 992px
 +media-breakpoint-down(lg)
@@ -93,6 +96,9 @@
 		&:hover, &:focus
 			color: #FFF
 			background-color: transparent
+	.section
+		&__coach
+			//min-height: 950px
 	.footer
 		&__logo
 			margin-top: .5rem
@@ -125,6 +131,8 @@
 			text-align: center
 			.align-self-center
 				padding: 2rem
+		&__coach
+			//min-height: 1000px
 	.footer
 		text-align: center
 		.footer__menuBlock
@@ -160,6 +168,9 @@
 +media-breakpoint-down(sm)
 	h1
 		font-size: 1.7em
+	.section
+		&__coach
+			//min-height: auto
 
 // <576px
 +media-breakpoint-down(xs)

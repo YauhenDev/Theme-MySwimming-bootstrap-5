@@ -85,4 +85,38 @@ window.addEventListener('DOMContentLoaded', () => {
 	  }*/);
 	  wow.init();
 
+	  //активация SWIPER
+	  const swiper = new Swiper('.swiper-container', {
+		//slidesPerView: 4,
+		centeredSlides: false,
+		spaceBetween: 5,
+		pagination: {
+		  el: '.swiper-pagination',
+		  clickable: true,
+		},
+		navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+		breakpoints: {
+		  576: {
+			slidesPerView: 1,
+			spaceBetween: 5,
+		  },
+		  768: {
+			slidesPerView: 2,
+			spaceBetween: 5,
+		  },
+		  992: {
+			slidesPerView: 4,
+			spaceBetween: 5,
+		  },
+		  1200: {
+			slidesPerView: 4,
+			spaceBetween: 5,
+		  },
+		}
+  
+	  });
+
 });
