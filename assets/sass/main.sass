@@ -1,12 +1,6 @@
 @import "fonts"
 @import "vars"
 @import "libs"
-@import "parallax"
-@import url('../../node_modules/animate.css/animate.min.css');
-@import url('../../node_modules/swiper/swiper-bundle.min.css');
-
-body
-	padding-top: 6rem
 
 b, strong, .strong
 	font-weight: 700
@@ -23,7 +17,7 @@ a
 	background-position: 0% 100%
 	background-repeat: no-repeat
 	background-size: 0% 1px
-	transition: background-size .3s !important
+	transition: background-size .7s !important
 	&:hover
 		color: $info
 		text-decoration: none
@@ -213,16 +207,34 @@ header
 
 
 .section
+	/* PRICE */
+	&__price
+		img
+			background-color: $blue-light
+			min-height: 120px
+	/* О школе */
+	&__about
+		margin-top: 4rem
+		margin-bottom: 4rem
+		&-img
+			padding-right: 4rem
+			padding-bottom: 2rem
+		.wave
+			width: 94px
+			height: 20px
+			margin-bottom: 1rem
+
 	/* Индивидуалки ***** */
 	&__swimmer
 		background-image: url(../img/webp/fon.webp)
 		background-repeat: no-repeat
 		background-position: 50% 70px
 		background-size: cover
-		padding: 2rem 0
+		margin-top: 2rem
 		img
 			width: 100%
 			max-width: 497px
+
 	/* Тренера ***** */
 	&__coach
 		//min-height: 900px
@@ -233,20 +245,73 @@ header
 		background: -webkit-linear-gradient(0deg, rgba(237,249,255,0) 0%, rgba(237,249,255,1) 100%)
 		background: linear-gradient(0deg, rgba(237,249,255,0) 0%, rgba(237,249,255,1) 100%)
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#edf9ff",endColorstr="#edf9ff",GradientType=1)
-
-
-/**/
-#map-index
-	height: 300px;
-	margin-top: 4rem;
-	margin-bottom: 4rem;
-	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .1);
 	
-	background-image: url(../img/webp/map.webp);
-	background-repeat: no-repeat;
-	background-position: center 0;
-	background-size: cover;
-	padding: 0;
+	/* Инста ***** */
+	&__insta
+		padding-top: 2rem
+		padding-bottom: 2rem
+		.fa-instagram-square
+			&:before
+				font-size: 2rem
+				background: linear-gradient(#4A48E8, #f20a17, #F7CE02)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				display: initial
+				border-radius: .4rem
+	
+	/* Начало */
+	&__begin
+		margin-bottom: 4rem
+		.container
+			min-height: 550px
+			background-image: url(../img/img-svg/fon.svg)
+			background-repeat: no-repeat
+			background-position: center top
+			background-size: contain
+		.ico-11
+			margin-top: 4rem
+			float: right
+		.ico-22
+			margin-top: 0
+			float: left
+
+		.ico-33
+			margin-top: 8rem
+			margin-right: 4rem
+			float: right
+		.ico-44
+			margin-top: 3rem
+			margin-right: auto
+			margin-left: auto
+
+/* CARD */
+.card
+	border: 0
+	&-body
+		text-align: center
+	&-title
+		font-size: 1.2rem
+	&-text
+		font-family: 'Gilroy', sans-serif, Arial, Helvetica
+		font-size: 1.5rem
+		font-weight: 800
+		color: #0E2981
+		background: url('../img/img-svg/wave.svg')
+		background-repeat: no-repeat
+		background-position: center top
+		padding-top: 1.2rem
+
+/* MAP */
+#map-index
+	height: 300px
+	margin-top: 4rem
+	margin-bottom: 4rem
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .1)
+	background-image: url(../img/webp/map.webp)
+	background-repeat: no-repeat
+	background-position: center 0
+	background-size: cover
+	padding: 0
 	a
 		display: block
 		height: 300px
@@ -255,13 +320,16 @@ header
 		height: 60px
 		max-width: 80px
 
-/* IE FIX webp */
+/* IE FIX */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
-	.section__swimmer 
-		background-image: url(../img/fon.jpg)
+	.section
+		&__swimmer 
+			background-image: url(../img/fon.jpg)
+		&__insta
+			.fa-instagram-square:before
+				background: transparent!important
 	#map-index
 		background-image: url(../img/map.png)
-
 
 /* Swiper */
 .swiper
@@ -332,6 +400,8 @@ header
 		margin-bottom: 1rem
 		padding-top: 1rem
 		border-top: 1px solid #f5f5f5
+	&___requisites
+		margin-bottom: 1rem !important
 	
 /* MOBILE PANEL ******************** */
 #bottom-panel
@@ -355,8 +425,62 @@ header
 		&.tel-vlc
 			background-color: #000
 
-/* ICO ****************************** */
+/* ZAYAVKA */
+.zayavka-body, .zayavka-body iframe
+	min-height: 420px
+.contactMe 
+	.msg
+		display: none
+		padding: 12px 20px 12px 40px
+		font-size: 12px
+		line-height: 16px
+		text-transform: uppercase
+		word-break: break-word
+		margin: 20px 0 10px 0
+		background-repeat: no-repeat
+		background-size: 20px 20px
+		background-position: left 12px top 12px
+		&.error
+			color: #FFF
+			background-color: #ff2a2f
+			background-image: url(/contactme/imgs/x.png)
+		&.success
+			color: #FFF
+			background-color: #39810e
+			background-image: url(/contactme/imgs/tick.png)
 
+.embed-responsive .embed-responsive-item, .embed-responsive iframe
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 100%
+	border: 0
+
+/* ICO ****************************** */
+.ico-ellipse 
+	width: 84px
+	height: 84px
+	background-image: url(../img/img-svg/ellipse-b.svg)
+	background-repeat: no-repeat
+	background-position: 0 0
+	padding: 8px
+	margin-top: 1rem
+	margin-bottom: 1rem
+	span
+		display: block
+		width: 68px
+		height: 68px
+		background-image: url(../img/img-svg/ellipse-s.svg)
+		background-repeat: no-repeat
+		background-position: 0 0
+		text-align: center
+		vertical-align: middle
+		padding: 14px
+		img 
+			width: 40px
+			height: 40px
 .tel-mts
 	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAADvklEQVRoQ+2bTUgVURiGn0E0UcqMoGsbpVpFJEggLXQjVNDKbJEZtYjKShemEf2gaJtQDMFUjGihVIt+cBFUFK0iQheuXAjeWyBSCElK0E2ziY+LlJbMOWfmzPXS/bbzft+8zznn3vMzM45bUOAyNweOQ0qG60IkghONKgE4LrgpCbrCtAOKwJmZLgsLqc28IQ9nbjYN/K9edNx0D6fg6E76kF6/HsrLYds2yMiAyUl49w6mpuy0ZtKA8/Phxg04dgxycv6Ge/QILl+GiYlgwZMCfPgw3L0L0rtece4c9PV5qdSvhw5cVwfd3eoGRdnSAm1tejmrqUMFPlIND+6bGT91Cu7cMcv9Mys04MJC+PDBn+EdOyAa9VcjNGAxKv/EfiIWg+3b/VSAUICbm6G11Z/RpezGRrh507yWdeDcXPj61dzgyszFRcjOhh8/zGpaB+7vh9OnzcytliXzt8zRJmEVOGsdxL8Fv3+OxyEnF9yf+shWgZuaoKND35RKhuk0ZRV4bAx27lSxr68ZHYWSEv08a8BBzLteOJs3w+fPXqrl160Byxq4p0fPjK76/Hno7dXLsgb8+DEcOqRnRlc9NASVlXpZ1oBlGSnD2ma8f6+/erMCLNu+2dngp6N/NZ7u79gK8J49MDJis29/1963D16+VL+XFWDZ4D98qG7Cj/LMGbh9W72CFeALF6CzU92EH6VsTK5fV69gBVgMXLumbsKPsqsLGhrUK1gBbm+HixfVTfhRyimILDNVI+WBBwfh+HFVXEsHALLZl99WGDEwACdOqN/JSg+fPau/5FO3vFwp++3aWvVsK8AyN754oW7Cj1L3MMAK8Nat9h6VrGyc+nq4dUu9yawAy+0/fYItW9SNmCorKuD1a/Vsa8D37sPRanUjJsr5+cRzKTnYUw1rwAcPwtOnqjbMdG/eQFmZXq41YLHx5Qvk5ekZ0lGbPGizCiyrLVl12QgZxplZ+ieXVoEFVM6cNm0KHtn0iaJ14L174e3bYIE/fgSZ+kzCOrCYCnpo79oFcgRsEqEAi7FLlxKvOPiNqip48sS8SmjAYnH/Aejt0T94k9zpaaipgVevzGElM1TgJauyHDx5EoqLvc3L1CZ73itXYWHeW++lSArwkqndu6G0NPE4pqgINm5MXJmZgfFxGB6GZ8/he9wLQ/16UoHVbQanTAOv3pbpdy2DG2chVtIa0v/dC+KRSOITgFQO+QQgFlN7QTyVOU28K7WKSeG1mpMGXqs9E5SvdA8H1ZJrtU66h9dqzwTl6xep0+pMcy5ygQAAAABJRU5ErkJggg==') no-repeat
 .tel-vlc

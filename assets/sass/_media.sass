@@ -31,8 +31,6 @@
 
 // ≥992px - до max-width: 992px
 +media-breakpoint-down(lg)
-	body
-		padding-bottom: 3em
 	.navbar-collapse
 		height: 100vh
 		a
@@ -77,6 +75,8 @@
 
 	h1
 		font-size: 2em
+	#fixWidth
+		padding: 0
 	.navbar-nav 
 		a
 			&.nav-link
@@ -97,9 +97,18 @@
 			color: #FFF
 			background-color: transparent
 	.section
-		&__coach
-			//min-height: 950px
+		&__about
+			&-img
+				padding-right: 0
+			&-center
+				text-align: center
+		&__insta
+			background-color: #EDF9FF
+		&__begin
+			.container
+				min-height: 440px
 	.footer
+		padding-bottom: 1.8rem
 		&__logo
 			margin-top: .5rem
 			margin-right: .5rem
@@ -107,6 +116,9 @@
 		p
 			&.text-start
 				font-size: .6
+	.ico-ellipse 
+		margin-left: auto
+		margin-right: auto
 
             
 
@@ -131,8 +143,17 @@
 			text-align: center
 			.align-self-center
 				padding: 2rem
-		&__coach
-			//min-height: 1000px
+		&__begin
+			.container
+				max-height: 400px !important
+				background-position: center bottom
+			img
+				max-width: 100px
+			.sq-ico-3
+				float: right
+			.sq-ico-4
+				margin-top: 50px !important
+
 	.footer
 		text-align: center
 		.footer__menuBlock

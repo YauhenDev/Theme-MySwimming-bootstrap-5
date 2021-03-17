@@ -43,7 +43,7 @@
 <body>
 
 <!-- NAV -->
-<nav class="navbar navbar-expand-lg mb-2 fixed-top bg-white">
+<nav class="navbar navbar-expand-lg mb-2 sticky-top bg-white">
 	<div class="container" id="fixWidth">
 	
 		<a class="navbar-brand bs-0" href="/" title="Школа Плавания MySwimming">
@@ -121,7 +121,7 @@
 	<div class="container-fluid h-2-bg">
 		<div class="container">
 
-			<div class="row no-gutters justify-content-center">
+			<div class="row g-0 justify-content-center">
 
 				<div class="d-none d-lg-block col-lg-2">
 					<div class="parallax bg-lt float-end" data-prl>
@@ -155,7 +155,7 @@
 	<div class="container-fluid h-3-bg">
 		<div class="container">
 
-			<div class="row no-gutters justify-content-md-center">
+			<div class="row g-0 justify-content-md-center">
 
 				<div class="d-none d-lg-block col-lg-3">
 					<div class="parallax bg-lr float-end" data-prl>
@@ -167,7 +167,7 @@
 					<div  class="wow animate__flipInX" data-wow-duration="1.5s" data-wow-delay="0s">
 						<p>Мы создаём чемпионов</p>
 					
-						<a data-toggle="modal" data-frame-load="zvk_myswm" data-target="#modalZV" class="btn btn-lg btn-primary mb-2 mx-2" title="Записаться в Школу Плавания">Записаться в группу</a>
+						<a data-bs-toggle="modal" data-bs-target="#modalZV" data-frame-load="zvk_myswm" class="btn btn-lg btn-primary mb-2 mx-2" title="Записаться в Школу Плавания">Записаться в группу</a>
 						<a href="/contacts/" class="btn btn-lg btn-outline-primary mb-2 mx-2" title="Подробнее о Школе Плавания">Подробнее о школе</a>
 					</div>
 				</div>
@@ -185,7 +185,7 @@
 
         <div class="container-fluid h-4-bg">
         <div class="container">
-            <div class="row no-gutters justify-content-center">
+            <div class="row g-0 justify-content-center">
                 <div class="col-2 col-lg-1 text-center wow animate__slideInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
                     <a href="viber://chat?number=375298985638" class="bs-0" title="Viber Школы плавания"><i class="fab fa-viber"></i></a>
                 </div>
@@ -201,28 +201,125 @@
 
 </header>
 
+<!-- ЦЕНЫ -->
+<section class="container section__price">
+	<div class="row row-cols-1 row-cols-md-3">
+		<div class="col mb-4">
+			<div class="card h-100" itemscope itemtype="http://schema.org/Product">
+				<a href="/obuchenie-plavaniu-detey-6-8-let/" title="Обучение плаванию детей от 6-8 лет" class="bs-0">
+					<img data-jpg data-jpg-source="/assets/img/obuchenie-7.jpg" class="card-img-top rounded" alt="Обучение плаванию детей от 6-8 лет">
+				</a>
+			  <div class="card-body">
+				<p class="card-title" itemprop="name">Обучение плаванию детей <strong>от 6-8 лет</strong></p>
+				<p class="card-text" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<span itemprop="price"></span>
+					<span itemprop="priceCurrency" content="BYN">бел. руб.</span><sup>*</sup>
+				</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col mb-4">
+			<div class="card h-100" itemscope itemtype="http://schema.org/Product">
+				<a href="/obuchenie-plavaniu-detey-ot-9-let/" title="Обучение плаванию детей от 9 лет" class="bs-0">
+					<img data-jpg data-jpg-source="/assets/img/obuchenie-9.jpg" class="card-img-top rounded" alt="Обучение плаванию детей от 6-8 лет">
+				</a>
+			  <div class="card-body">
+				<p class="card-title" itemprop="name">Обучение плаванию детей <strong>от 9 лет</strong></p>
+				<p class="card-text" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<span itemprop="price"></span>
+					<span itemprop="priceCurrency" content="BYN">бел. руб.</span><sup>*</sup>
+				</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col mb-4">
+			<div class="card h-100" itemscope itemtype="http://schema.org/Product">
+				<a href="/individualnoe-obuchenie-plavaniu/" title="Индивидуальные занятия по плаванию" class="bs-0">
+					<img data-jpg data-jpg-source="/assets/img/obuchenie-6.jpg" class="card-img-top rounded" alt="Обучение плаванию детей от 6-8 лет">
+				</a>
+			  <div class="card-body">
+				<p class="card-title" itemprop="name"><strong>Индивидуальные занятия</strong> по плаванию</p>
+				<p class="card-text" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<span itemprop="price" class="price__individual"></span>
+					<span itemprop="priceCurrency" content="BYN">бел. руб.</span>
+				</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</section>
 
+<!-- О Школе -->
+<section class="container section__about">
+	<div class="row justify-content-md-center">
+		<div class="d-none d-md-block col-md-4 col-lg-6 col-xl-5 text-center section__about-img">
 
-<div class="container">
-	111<br><br>
-	222<br><br>
-	333<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-</div>
+			<img data-jpg data-jpg-source="/assets/img/shkola-m.jpg" class="card-img-top rounded wow animate__flipInX" data-wow-duration="2s" data-wow-delay="0s" alt="">
+
+		</div>
+		<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+
+			<h5 class="wow animate__zoomIn" data-wow-duration="0.5s" data-wow-delay="0s">О нашей школе</h5>
+
+			<h2 class="wow animate__zoomIn" data-wow-duration="1s" data-wow-delay="0s">Школа Плавания<br/> MySwimming</h2>
+			<img src="/assets/img/img-svg/wave.svg" class="wave" alt="">
+			<p class="wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="0s">Обучение плаванию в нашей Школе Плавания MySwimming — "Мой плавательный центр" это проект для всех родителей, которые хотят: </p>
+			
+			<div class="d-sm-block d-md-none text-center section__about-img">
+				<img data-jpg data-jpg-source="/assets/img/shkola-m.jpg" class="card-img-top rounded" alt="">
+			</div>
+			
+			<div class="row section__about-center">
+				<div class="col-6 wow animate__zoomIn" data-wow-duration="1.5s" data-wow-delay="0s">
+					
+					<div class="ico-ellipse">
+						<span>
+							<img src="/assets/img/img-svg/swim-ico1.svg" class="" alt="">
+						</span>
+					</div>
+					
+					Научить своих детей плавать, потому что уметь плавать – это залог безопасности любого ребенка;
+					
+				</div>
+				<div class="col-6 wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="0s">
+				
+					<div class="ico-ellipse">
+						<span>
+							<img src="/assets/img/img-svg/swim-ico2.svg" class="" alt="">
+						</span>
+					</div>
+					
+					Хотят, чтобы их ребенок не просто «купался», а плавал хорошо и красиво, с правильной техникой;
+				
+				</div>
+				<div class="col-6 wow animate__zoomIn" data-wow-duration="2.5s" data-wow-delay="0s">
+				
+					<div class="ico-ellipse">
+						<span>
+							<img src="/assets/img/img-svg/swim-ico3.svg" class="" alt="">
+						</span>
+					</div>
+					
+					Хотят еще больше развивать существующие у ребенка спортивный талант и способности именно к плаванию;
+				
+				</div>
+				<div class="col-6 wow animate__zoomIn" data-wow-duration="3s" data-wow-delay="0s">
+				
+					<div class="ico-ellipse">
+						<span>
+							<img src="/assets/img/img-svg/swim-ico4.svg" class="" alt="">
+						</span>
+					</div>
+					
+					В нашей Школе Плавания Ваш ребенок научится правильно плыть спортивной техникой.
+				
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
 
 <!-- ИНДИВИДУАЛЬНЫЕ -->
 <section class="jumbotron-fluid section__swimmer">
@@ -234,7 +331,7 @@
 				<p class="wow animate__zoomIn" data-wow-duration="1.5s" data-wow-delay="0s">Индивидуальные занятия – это индивидуальный подход и внимание тренера, а также получение позитивных эмоций от занятий.</p>
 
 				<div  class="wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="0s">
-					<a data-toggle="modal" data-frame-load="zvk_myswm" data-target="#modalZV" class="btn btn-lg btn-primary mb-2 mx-2" title="Заказать абонемент в Школу Плавания">Заказать абонемент</a>
+					<a data-bs-toggle="modal" data-bs-target="#modalZV" data-frame-load="zvk_myswm" class="btn btn-lg btn-primary mb-2 mx-2" title="Заказать абонемент в Школу Плавания">Заказать абонемент</a>
 					<a href="/individualnoe-obuchenie-plavaniu/" class="btn btn-lg btn-outline-primary mb-2 mx-2" title="Индивидуальные занятия по плаванию">Подробнее</a>
 				</div>
 
@@ -250,13 +347,13 @@
 	</div>
 </section>
 
-<!-- ТРЕНЕРА-->
+<!-- ТРЕНЕРА -->
 <section class="jumbotron-fluid section__coach">
 	<div class="container">
 		<div class="row justify-content-md-center">
 			<div class="col-12 col-xl-10 pt-4 text-center">
 
-				<div class="wow animate__flipInX" data-wow-duration="3s" data-wow-delay="0s">
+				<div>
 					<h5>Наши тренеры</h5>
 					<h2>Профессионалы<br/> своего дела</h2>
 				</div>
@@ -267,11 +364,8 @@
 						
 							<div>
 								<a href="/trenera-po-plavaniu/#elvira" title="Тренер по плаванию Бученкова Эльвира Адольфовна">
-								<picture>
-									<source type="image/webp" srcset="upload/trenera/buchenkova-elvira-sm.webp">
-									<source type="image/jpeg" srcset="upload/trenera/buchenkova-elvira-sm.jpg">
-									<img src="upload/trenera/buchenkova-elvira-sm.jpg" class="rounded" alt="" style="width: 100%; max-width: 400px;">
-								</picture></a><br />
+									<img data-jpg data-jpg-source="upload/trenera/buchenkova-elvira-sm.jpg" class="rounded" alt="" style="width: 100%; max-width: 400px;">
+								</a><br />
 								
 								<h4>Бученкова<br />
 								Эльвира Адольфовна</h4>
@@ -284,11 +378,8 @@
 						
 							<div>
 								<a href="/trenera-po-plavaniu/#alexsandr" title="Тренер по плаванию Бученков Александр Эдуардович">
-								<picture>
-									<source type="image/webp" srcset="upload/trenera/buchenkov-aleksandr-sm.webp">
-									<source type="image/jpeg" srcset="upload/trenera/buchenkov-aleksandr-sm.jpg">
-									<img src="upload/trenera/buchenkov-aleksandr-sm.jpg" class="rounded" alt="Тренер по плаванию Бученков Александр Эдуардович" style="width: 100%; max-width: 400px;">
-								</picture></a><br />
+									<img data-jpg data-jpg-source="upload/trenera/buchenkov-aleksandr-sm.jpg" class="rounded" alt="Тренер по плаванию Бученков Александр Эдуардович" style="width: 100%; max-width: 400px;">
+								</a><br />
 								
 								<h4>Бученков<br />
 								Александр Эдуардович</h4>
@@ -301,11 +392,8 @@
 						
 							<div>
 								<a href="/trenera-po-plavaniu/#inga" title="Тренер по плаванию Смирнова Инга Михайловна">
-								<picture>
-									<source type="image/webp" srcset="upload/trenera/smirnova-sm.webp">
-									<source type="image/jpeg" srcset="upload/trenera/smirnova-sm.jpg">
-									<img src="upload/trenera/smirnova-sm.jpg" class="rounded" alt="Тренер по плаванию Смирнова Инга Михайловна" style="width: 100%; max-width: 400px;">
-								</picture></a><br />
+									<img data-jpg data-jpg-source="upload/trenera/smirnova-sm.jpg" class="rounded" alt="Тренер по плаванию Смирнова Инга Михайловна" style="width: 100%; max-width: 400px;">
+								</a><br />
 								
 								<h4>Смирнова <br />
 								Инга Михайловна</h4>
@@ -318,11 +406,8 @@
 						
 							<div>
 								<a href="/trenera-po-plavaniu/#varvara" title="Тренер по плаванию Драгун Варвара Геннадьевна">
-								<picture>
-									<source type="image/webp" srcset="upload/trenera/dragun-sm.webp">
-									<source type="image/jpeg" srcset="upload/trenera/dragun-sm.jpg">
-									<img src="upload/trenera/dragun-sm.jpg" class="rounded" alt="Тренер по плаванию Драгун Варвара Геннадьевна" style="width: 100%; max-width: 400px;">
-								</picture></a><br />
+									<img data-jpg data-jpg-source="upload/trenera/dragun-sm.jpg" class="rounded" alt="Тренер по плаванию Драгун Варвара Геннадьевна" style="width: 100%; max-width: 400px;">
+								</a><br />
 								
 								<h4>Драгун <br />
 								Варвара Геннадьевна</h4>
@@ -345,27 +430,183 @@
 </section>
 
 
-<div class="container c-about">
-	111<br><br>
-	222<br><br>
-	333<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	<a href="#">dddd</a><br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-	dddd<br><br>
-</div>
+<!-- НАЧНИ свой путь -->
+
+<section class="jumbotron section__begin">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			
+			<div class="d-none d-lg-block col-lg-3 col-xl-2">
+	
+					<div class="parallax bg-lt ico-11" data-prl>
+						<div class="bg-ico ico-img-1" data-depth="1"></div>
+					</div>
+	
+			</div>
+			<div class="col-12 col-lg-6 col-xl-6 pt-4 text-center">
+				
+				<h5>Начните путь</h5>
+				<h2>Начните свой путь в плавание <br/>вместе с профессионалами</h2>
+				
+				<a  data-bs-toggle="modal" data-bs-target="#modalZV" data-frame-load="zvk_myswm" class="btn btn-lg btn-primary my-4" title="Записаться в группу по плаванию">
+					Записаться в группу
+				</a>
+
+			</div>
+			<div class="d-none d-lg-block col-lg-3 col-xl-2">
+	
+					<div class="parallax bg-lr ico-22" data-prl>
+						<div class="bg-ico ico-img-2" data-depth="1"></div>
+					</div>
+	
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="d-none d-lg-block col-lg-5 col-xl-4">
+	
+					<div class="parallax bg-lt ico-33" data-prl>
+						<div class="bg-ico ico-img-3" data-depth="0.5"></div>
+					</div>
+	
+			</div>
+			<div class="d-none d-lg-block col-lg-5 col-xl-4">
+	
+					<div class="parallax bg-lt ico-44" data-prl>
+						<div class="bg-ico ico-img-4" data-depth="0.5"></div>
+					</div>
+	
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-6 d-md-block d-lg-none text-center">
+	
+					<img src="/assets/img/img-svg/sq-ico-3.svg" alt="" class="sq-ico-3" >
+	
+			</div>
+			<div class="col-6 d-md-block d-lg-none text-center pt-4">
+	
+					<img src="/assets/img/img-svg/sq-ico-4.svg" alt="" class="sq-ico-4 mt-4" >
+	
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- INSTAGRAM -->
+<section class="jumbotron section__insta">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 pt-4 mb-4 text-center">
+	
+				<a class="click-insta bs-0" href="https://www.instagram.com/myswimming.center" title="Наш Instagram" target="_blank" rel="nofollow" onclick="yaCounter45395127.reachGoal('socinsta'); return true;">
+					<i class="fab fa-instagram-square"></i><br />
+					<h2>
+						Мы в инстаграм
+					</h2>
+				</a>
+	
+			</div>
+		</div>
+		<div class="row g-0">
+			<!-- 1 col -->
+			<div class="col-4 d-none d-lg-block mt-4">
+					
+				<div class="row g-0">
+					<div class="col-12 text-center p-2 wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="0s">
+						
+						<a href="https://www.instagram.com/p/B82_zByByBA/" target="_blank" title="Посмотреть в instagram" rel="nofollow">
+							<img data-jpg data-jpg-source="/upload/insta/instagram-com-p-B82_zByByBA.jpg" class="img-fluid" alt="">
+						</a>
+						
+					</div>
+				</div>
+				<div class="row g-0">
+					<div class="col-6 text-center p-2 wow animate__zoomIn" data-wow-duration="2.4s" data-wow-delay="0s">
+					
+						<a href="https://www.instagram.com/p/CEQutxkh5MC/" target="_blank" title="Посмотреть в instagram" rel="nofollow">
+							<img data-jpg data-jpg-source="/upload/insta/instagram-com-p-CEQutxkh5MC.jpg" class="img-fluid" alt="">
+						</a>
+						
+					</div>
+					<div class="col-6 text-center p-2 wow animate__zoomIn" data-wow-duration="2.8s" data-wow-delay="0s">
+						
+						<a href="https://www.instagram.com/p/B9isW8TF35g/" target="_blank" title="Посмотреть в instagram" rel="nofollow">
+							<img data-jpg data-jpg-source="/upload/insta/instagram-com-p-B9isW8TF35g.jpg" class="img-fluid" alt="">
+						</a>
+					</div>
+				</div>
+	
+			</div>
+			
+			<!-- 2 col -->
+			<div class="col-4 d-none d-lg-block mt-4">
+	
+				<div class="row g-0">
+					<div class="col-6 text-center p-2 wow animate__zoomIn" data-wow-duration="1s" data-wow-delay="0s">
+					
+						
+						<a href="https://www.instagram.com/p/B72kkr3BnuL/" target="_blank" title="Посмотреть в instagram" rel="nofollow">
+							<img data-jpg data-jpg-source="/upload/insta/instagram-com-p-B72kkr3BnuL.jpg" class="img-fluid" alt="">
+						</a>
+						
+					</div>
+					<div class="col-6 text-center p-2 wow animate__zoomIn" data-wow-duration="1.8s" data-wow-delay="0s">
+						
+						<a href="https://www.instagram.com/p/CFlxTNsF5E6/" target="_blank" title="Посмотреть в instagram" rel="nofollow">
+							<img data-jpg data-jpg-source="/upload/insta/instagram-com-p-CFlxTNsF5E6.jpg" class="img-fluid" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="row g-0">
+					<div class="col-12 text-center p-2 wow animate__zoomIn" data-wow-duration="1.4s" data-wow-delay="0s">
+						<a href="https://www.instagram.com/p/CFtU0Rmlxmp/" target="_blank" title="Посмотреть в instagram" rel="nofollow">
+							<img data-jpg data-jpg-source="/upload/insta/instagram-com-p-CFtU0Rmlxmp.jpg" class="img-fluid" alt="">
+						</a>
+						
+					</div>
+				</div>
+					
+			</div>
+			
+			<!-- 3 col -->
+			<div class="col-4 d-none d-lg-block mt-4">
+					
+				<div class="row g-0">
+					<div class="col-12 text-center p-2 wow animate__zoomIn" data-wow-duration="3s" data-wow-delay="0s">
+						
+						<a href="https://www.instagram.com/p/B8dN30dg6Jz/" target="_blank" title="Посмотреть в instagram" rel="nofollow">
+							<img data-jpg data-jpg-source="/upload/insta/instagram-com-p-B8dN30dg6Jz.jpg" class="img-fluid" alt="">
+						</a>
+						
+						
+					</div>
+				</div>
+				<div class="row g-0">
+					<div class="col-6 text-center p-2 wow animate__zoomIn" data-wow-duration="2.8s" data-wow-delay="0s">
+						
+						
+						<a href="https://www.instagram.com/p/B7sRL6IBprv/" target="_blank" title="Посмотреть в instagram" rel="nofollow">
+							<img data-jpg data-jpg-source="/upload/insta/instagram-com-p-B7sRL6IBprv.jpg" class="img-fluid" alt="">
+						</a>
+						
+					</div>
+					<div class="col-6 text-center p-2 wow animate__zoomIn" data-wow-duration="2.4s" data-wow-delay="0s">
+						
+						
+						<a href="https://www.instagram.com/p/CEn1-l9FEdF/" target="_blank" title="Посмотреть в instagram" rel="nofollow">
+							<img data-jpg data-jpg-source="/upload/insta/instagram-com-p-CEn1-l9FEdF.jpg" class="img-fluid" alt="">
+						</a>
+						
+						
+					</div>
+				</div>
+					
+			</div>
+		</div>
+	</div>
+</section>
+
 
 
 <!-- КАРТА -->
@@ -373,59 +614,12 @@
 	<div class="row">
 		<div class="col-12">
 			<div id="map-index">
-				<a href="#" class="bs-0" data-bs-toggle="modal" data-bs-target="#mapModalCenter">&nbsp;</a>
+				<a href="#" class="bs-0" data-bs-toggle="modal" data-bs-target="#mapModalCenter">
+				</a>
 			</div>
 		</div>
 	</div>
 </section>
-
-<!-- MODAL КАРТА -->
-<div class="modal fade" id="mapModalCenter" tabindex="-1" role="dialog" aria-labelledby="mapModalCenterTitle" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="mapModalCenterTitle">Открыть карту</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-				</button>
-			</div>
-			<div class="modal-body">
-
-				<div class="row">
-					<div class="col-6 col-md-3 align-self-end text-center py-4">
-						<a href="https://yandex.by/maps/-/CCQ3NRb6XA" target="_blank" title="Открыть Yandex.Карты" rel="nofollow"  class="bs-0">
-							<img src="assets/img/img-svg/maps-yandex-icon.svg"><br/>
-							Yandex<span class="d-none d-sm-inline">.Карты</span>
-						</a>
-					</div>
-					<div class="col-6 col-md-3 align-self-end text-center py-4">
-						<a href="https://g.page/MySwimming?share" target="_blank" title="Открыть Google.Карты" rel="nofollow"  class="bs-0">
-							<img src="assets/img/img-svg/maps-google-icon.svg"><br/>
-							Google<span class="d-none d-sm-inline">.Карты</span>
-						</a>
-					</div>
-					<div class="col-6 col-md-3 align-self-end text-center py-4">
-						<a href="https://map.by/belarus/streets/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/%D0%94/%D0%94%D0%BE%D0%BB%D0%B3%D0%BE%D0%B1%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0/37" target="_blank" title="Открыть MAP.by" rel="nofollow"  class="bs-0">
-							<img src="assets/img/img-svg/maps-mapby-icon.svg"><br/>
-							MAP.by
-						</a>
-					</div>
-					<div class="col-6 col-md-3 align-self-end text-center py-4" title="Открыть карту на сайте">
-						<a href="/contacts/" class="bs-0">
-							<picture>
-								<source type="image/webp" srcset="assets/img/webp/shkola-plaveniya-logo.webp">
-								<source type="image/png" srcset="assets/img/shkola-plaveniya-logo.png">
-								<img src="assets/img/shkola-plaveniya-logo.png" class="logo-color" alt="Школа Плавания MySwimming">
-							</picture><br/>
-							На сайте
-						</a>
-					</div>
-				</div>
-				
-			 </div>
-		</div>
-	</div>
-</div>
-
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -438,7 +632,7 @@
 					<source type="image/png" srcset="assets/img/shkola-plaveniya-logo.png">
 					<img src="assets/img/shkola-plaveniya-logo.png" class="footer__logo w-100 mb-4" alt="Школа Плавания MySwimming">
 				</picture>
-				<p class="text-start">Частное предприятие «МОЙ ПЛАВАТЕЛЬНЫЙ ЦЕНТР», УНП 192954575. Свидетельство о гос.регистрации №192954575 от 14 августа 2017 года, выданное Минским горисполкомом</p>
+				<p class="footer___requisites text-start"></p>
 				<a href="/voprosi-otvety/" class="fs-c mb-4" title="Вопросы - ответы"><i class="far fa-comment-dots"></i> Вопросы - ответы</a>
 	
 			</div>
@@ -495,38 +689,32 @@
 	</div>
 	
 	<div class="container-fluid">
-		<div class="container f-footer">
+		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-3">
-				
-					© 2017 — 2021 MySwimming
-					
+				<div class="col-12 col-md-12 col-lg-3 footer__copyright py-1">
+
 				</div>
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-8 col-lg-6 py-1">
 					
-					<p><a href="/dogovor-na-obuchenie-plavaniu/" title="Публичный договор на оказание услуг" class="fs-c"><i class="far fa-file-alt"></i> Публичный договор на оказание услуг</a></p>
+					<a href="/dogovor-na-obuchenie-plavaniu/" title="Публичный договор на оказание услуг" class="fs-c"><i class="far fa-file-alt"></i> Публичный договор на оказание услуг</a>
 	
 	
 				</div>
-				<div class="col-12 col-lg-3">
+				<div class="col-12 col-md-4 col-lg-3 footer__design py-1">
 					
-					Design <a href="https://whale.by" class="fs-c" target="_blank" title="Design Whale Studio" rel="nofollow">Whale Studio</a>
+					
 	
 				</div>
 			</div>
 		</div>
 	</div>
+
 </footer>
 
+<!-- MODAL -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
 
-<div class="jumbotron" id="bottom-panel">
-	<div class="row g-0">
-		<div class="col-6 d-lg-none">
-			<a href="tel:+375298985638" class="btn w-100 tel-mts konv_mts" onclick="yaCounter45395127.reachGoal('CallMeMTS'); return true;">(29) 898 56 38</a>
-		</div>
-		<div class="col-6 d-lg-none">
-			<a href="tel:+375293885638" class="btn w-100 tel-vlc konv_velcom" onclick="yaCounter45395127.reachGoal('CallMeVELCOM'); return true;">(29) 388 56 38</a>
-		</div>
 	</div>
 </div>
 
