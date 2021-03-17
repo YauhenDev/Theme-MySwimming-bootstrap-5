@@ -90,6 +90,11 @@ nav
 		&.nav-link
 			padding-left: 1.2rem !important
 			padding-right: 1.2rem !important
+			svg
+				width: 18px
+				fill: $blue
+				float: left
+				margin: 2px 4px 0 0
 	&.navbar
 		.nav-item
 			.dropdown-toggle
@@ -204,6 +209,11 @@ header
 			font-size: 2.5rem
 			&:hover
 				font-size: 2.8rem
+		svg
+			height: 35px
+			&:hover
+				height: 40px
+
 
 
 .section
@@ -250,14 +260,21 @@ header
 	&__insta
 		padding-top: 2rem
 		padding-bottom: 2rem
-		.fa-instagram-square
-			&:before
-				font-size: 2rem
-				background: linear-gradient(#4A48E8, #f20a17, #F7CE02)
-				-webkit-background-clip: text
-				-webkit-text-fill-color: transparent
-				display: initial
-				border-radius: .4rem
+		.instagram-square
+			display: block
+			width: 48px
+			height: 48px
+			margin: 1rem auto .8rem auto
+			background: $blue
+			background: linear-gradient(#4A48E8, #f20a17, #F7CE02)
+			background: -moz-linear-gradient(#4A48E8, #f20a17, #F7CE02)
+			background: -webkit-linear-gradient(#4A48E8, #f20a17, #F7CE02)
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4A48E8",endColorstr="#f20a17",GradientType=1)
+			border-radius: .8rem
+			padding-top: 1px
+			svg
+				width: 40px
+				fill: $white
 	
 	/* Начало */
 	&__begin
@@ -320,17 +337,6 @@ header
 		height: 60px
 		max-width: 80px
 
-/* IE FIX */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
-	.section
-		&__swimmer 
-			background-image: url(../img/fon.jpg)
-		&__insta
-			.fa-instagram-square:before
-				background: transparent!important
-	#map-index
-		background-image: url(../img/map.png)
-
 /* Swiper */
 .swiper
 	&-zaslugi
@@ -390,11 +396,22 @@ header
 		font-family: $h-font
 		font-size: 1rem
 		font-weight: 800
+		svg
+			fill: $blue
+			height: 20px
+			margin-right: 4px
+			margin-bottom: 4px
 	.soc
 		a
 			font-size: 1.5rem
 			margin-left: 1rem
 			margin-right: 1rem
+			svg
+				fill: $blue
+				height: 30px
+				margin-bottom: 2rem
+				&:hover
+					fill: $info
 	.container-fluid
 		margin-top: 1rem
 		margin-bottom: 1rem
@@ -491,13 +508,25 @@ header
     background-size: contain
     padding-left: 24px
 
-.fab.fa-viber
-	color: #6a5cb0
+.fill-viber
+	fill: #6a5cb0
+.fill-whatsapp 
+	fill: #00bc3a
+.fill-telegram
+	fill: #00afeb
 
-.fab.fa-whatsapp 
-	color: #00bc3a
-
-.fab.fa-telegram
-	color: #00afeb
+/* IE FIX */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	.section
+		&__swimmer 
+			background-image: url(../img/fon.jpg)
+		&__insta
+			.fa-instagram-square:before
+				background: transparent!important
+	#map-index
+		background-image: url(../img/map.png)
+	.fs-c
+		svg
+			float: left
 
 @import "media" // Always at the end
