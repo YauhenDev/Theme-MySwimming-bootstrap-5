@@ -93,18 +93,38 @@ window.addEventListener('DOMContentLoaded', () => {
 	// меняем jpg на WEBP если поддерживается
 	// *************************************
 	const allBigJPG = document.querySelectorAll("img[data-jpg]");
+
 	//проверяем поддерживается ли webp
-	function testWebP(callback) {
-		const webP = new Image();
-		webP.onload = webP.onerror = function() {
-		  callback(webP.height == 2);
-		};
-		webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-	}
+
+	// c созданием картинки
+	// function testWebP(callback) {
+	// 	const webP = new Image();
+	// 	webP.onload = webP.onerror = function() {
+	// 	  callback(webP.height == 2);
+	// 	};
+	// 	webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+	// }
+
+	// Используя функцию canvas.toDataUrl() вместо изображения в 
+	// качестве способа обнаружения объекта:
+	function support_format_webp() {
+		const elem = document.createElement('canvas');
+		if (!!(elem.getContext && elem.getContext('2d'))) {
+			return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+		} else {
+			return false;
+		}
+	};
+
 	allBigJPG.forEach(item => {
 		const jpgSource = item.getAttribute('data-jpg-source');
-		// https://learn.javascript.ru/ifelse
-		item.src = testWebP ? jpgSource.replace('.jpg', '.webp') : jpgSource;
+		if ( support_format_webp = true) {
+			//item.src = jpgSource;
+			item.src = jpgSource.replace('.jpg', '.webp');
+		} else {
+			item.src = jpgSource;
+		}
+
 	});
 	
 	// Запускаем паралакс для найденных элементов
