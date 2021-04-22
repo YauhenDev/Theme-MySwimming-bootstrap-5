@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -12,8 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
 		  footer = document.querySelector("footer"),
 		  footerToggle = footer.querySelectorAll(".footer__menuBlock"),
 		  footerCopyright = footer.querySelector(".footer__copyright"),
-		  footerDesign = footer.querySelector(".footer__design"),
-		  footerRequisites = footer.querySelector("p.footer___requisites"),
 		  thisYear = new Date();
 	
 	// Добавляем цены на  всем сайте
@@ -49,9 +47,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	//Убираем меню по  кнопки ESC
 	document.addEventListener('keydown', (e) => {
-        if (e.code === 'Escape' && nav.classList.contains('bg-info') && navButton.checked) {
-			tglMenu();
-			navButton.checked = false;
+        if (e.code === 'Escape' && 
+			nav.classList.contains('bg-info') && 
+			navButton.checked) {
+				tglMenu();
+				navButton.checked = false;
 		}
     });
 
@@ -59,8 +59,9 @@ window.addEventListener('DOMContentLoaded', () => {
 	//включаем показ меню в футере
 	footerToggle.forEach(item => {
 		item.addEventListener('click', () => {
-			if ( document.documentElement.clientWidth < 768 && item.classList.contains('showMenu')) {
-				item.classList.remove('showMenu');
+			if ( document.documentElement.clientWidth < 768 
+				&& item.classList.contains('showMenu')) {
+					item.classList.remove('showMenu');
 			} else if (document.documentElement.clientWidth < 768) {
 				item.classList.add('showMenu');
 			} 
@@ -92,21 +93,11 @@ window.addEventListener('DOMContentLoaded', () => {
 	
 	// меняем jpg на WEBP если поддерживается
 	// *************************************
-	const allBigJPG = document.querySelectorAll("img[data-jpg]");
-
-	//проверяем поддерживается ли webp
-
-	// c созданием картинки
-	// function testWebP(callback) {
-	// 	const webP = new Image();
-	// 	webP.onload = webP.onerror = function() {
-	// 	  callback(webP.height == 2);
-	// 	};
-	// 	webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-	// }
+	//const allBigJPG = document.querySelectorAll("img[data-jpg]");
 
 	// Используя функцию canvas.toDataUrl() вместо изображения в 
 	// качестве способа обнаружения объекта:
+	/* 
 	function support_format_webp() {
 		const elem = document.createElement('canvas');
 		if (!!(elem.getContext && elem.getContext('2d'))) {
@@ -125,8 +116,9 @@ window.addEventListener('DOMContentLoaded', () => {
 			item.src = jpgSource;
 		}
 
-	});
-	
+	}); 
+	*/
+
 	// Запускаем паралакс для найденных элементов
 	scene.forEach((item) => {
 		const parallax = new Parallax(item);
@@ -134,10 +126,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	//активация анимации wow.js
 	const wow = new WOW({
-		//boxClass:     'wow',      // default
-		//offset:       0,          // default
 		mobile:       false,       // default
-		//live:         true        // default
 	  });
 	  wow.init();
 
@@ -186,7 +175,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	modal.id = "mapModalCenter";
 	modal.setAttribute('aria-labelledby', 'mapModalCenterTitle');
 
-	// Хочется сложностей. Вместо просто установки через innerHTML
+	// Вместо установки в HTML будем через innerHTML
 	// Будем добавлять и очищать на лету )))
 
 	// функция очистки модалки
@@ -209,25 +198,44 @@ window.addEventListener('DOMContentLoaded', () => {
 			<div class="modal-body">
 				<div class="row">
 					<div class="col-6 col-md-3 align-self-end text-center py-4">
-						<a href="https://yandex.by/maps/-/CCQ3NRb6XA" target="_blank" title="Открыть Yandex.Карты" rel="nofollow"  class="bs-0">
+						<a 
+							href="https://yandex.by/maps/-/CCQ3NRb6XA" 
+							target="_blank" title="Открыть Yandex.Карты" 
+							rel="nofollow"  
+							class="bs-0"
+						>
 							<img src="assets/img/img-svg/maps-yandex-icon.svg"><br/>
 							Yandex<span class="d-none d-sm-inline">.Карты</span>
 						</a>
 					</div>
 					<div class="col-6 col-md-3 align-self-end text-center py-4">
-						<a href="https://g.page/MySwimming?share" target="_blank" title="Открыть Google.Карты" rel="nofollow"  class="bs-0">
+						<a 
+							href="https://g.page/MySwimming?share" 
+							target="_blank" title="Открыть Google.Карты" 
+							rel="nofollow"  
+							class="bs-0"
+						>
 							<img src="assets/img/img-svg/maps-google-icon.svg"><br/>
 							Google<span class="d-none d-sm-inline">.Карты</span>
 						</a>
 					</div>
 					<div class="col-6 col-md-3 align-self-end text-center py-4">
-						<a href="https://map.by/belarus/streets/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/%D0%94/%D0%94%D0%BE%D0%BB%D0%B3%D0%BE%D0%B1%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0/37" target="_blank" title="Открыть MAP.by" rel="nofollow"  class="bs-0">
+						<a 
+							href="https://map.by/belarus/streets/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/%D0%94/%D0%94%D0%BE%D0%BB%D0%B3%D0%BE%D0%B1%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0/37" 
+							target="_blank" 
+							title="Открыть MAP.by" 
+							rel="nofollow"  
+							class="bs-0"
+						>
 							<img src="assets/img/img-svg/maps-mapby-icon.svg"><br/>
 							MAP.by
 						</a>
 					</div>
 					<div class="col-6 col-md-3 align-self-end text-center py-4" title="Открыть карту на сайте">
-						<a href="/contacts/" class="bs-0">
+						<a 
+							href="/contacts/" 
+							class="bs-0"
+						>
 							<picture>
 								<source type="image/webp" srcset="assets/img/webp/shkola-plaveniya-logo.webp">
 								<source type="image/png" srcset="assets/img/shkola-plaveniya-logo.png">
@@ -252,7 +260,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	// ЗАЯВКА
 	const modalZayavka = modal.cloneNode(true),
 		  modalDialogZayavka = modalZayavka.querySelector('.modal-dialog');
-		  //zayavkaLinkModal = document.querySelectorAll('[data-target="#modalZV"]');
 
 	modal.after(modalZayavka);
 
@@ -265,11 +272,22 @@ window.addEventListener('DOMContentLoaded', () => {
 				<h3 class="modal-title" id="mapModalCenterTitle">
 					Заявка в школу плавания
 				</h3>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<button 
+					type="button" 
+					class="btn-close" 
+					data-bs-dismiss="modal" 
+					aria-label="Close">
+				</button>
 			</div>
 			<div class="modal-body mb-0 p-0">
 			<div class="zayavka-body embed-responsive">
-				<iframe class="embed-responsive-item" data-frame-group="zvk_myswm" data-frame-src="/zayavka.html" frameborder="0" allowfullscreen></iframe>
+				<iframe 
+					class="embed-responsive-item" 
+					data-frame-group="zvk_myswm" 
+					data-frame-src="/zayavka.html" 
+					frameborder="0" 
+					allowfullscreen>
+				</iframe>
 			</div>
 			</div>
 		</div>
@@ -292,10 +310,24 @@ window.addEventListener('DOMContentLoaded', () => {
 	mobilePhone.innerHTML = `
 		<div class="row g-0">
 			<div class="col-6 d-lg-none">
-				<a href="tel:+375298985638" class="btn w-100 tel-mts konv_mts" onclick="yaCounter45395127.reachGoal('CallMeMTS'); return true;">(29) 898 56 38</a>
+				<a 
+					href="tel:+375298985638" 
+					class="btn w-100 tel-mts konv_mts" 
+					onclick="yaCounter45395127.reachGoal('CallMeMTS'); 
+					return true;"
+				>
+					(29) 898 56 38
+				</a>
 			</div>
 			<div class="col-6 d-lg-none">
-				<a href="tel:+375293885638" class="btn w-100 tel-vlc konv_velcom" onclick="yaCounter45395127.reachGoal('CallMeVELCOM'); return true;">(29) 388 56 38</a>
+				<a 
+					href="tel:+375293885638" 
+					class="btn w-100 tel-vlc konv_velcom" 
+					onclick="yaCounter45395127.reachGoal('CallMeVELCOM'); 
+					return true;"
+				>
+					(29) 388 56 38
+				</a>
 			</div>
 		</div>
 	`;
@@ -303,8 +335,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	// Выводим копирайт
 	footerCopyright.innerHTML = `© 2017 — ${thisYear.getFullYear()} MySwimming`;
-	footerRequisites.innerHTML = `Частное предприятие «МОЙ ПЛАВАТЕЛЬНЫЙ ЦЕНТР», УНП 192954575. Свидетельство о гос.регистрации №192954575 от 14 августа 2017 года, выданное Минским горисполкомом`;
-	footerDesign.innerHTML = `Design <a href="https://whale.by" class="fs-c" target="_blank" title="Design Whale Studio" rel="nofollow">Whale Studio</a>`;
-
 
 });

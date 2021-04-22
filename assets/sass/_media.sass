@@ -164,26 +164,28 @@
 				font-weight: 800
 				position: relative
 				cursor: pointer
-
 				&:after
-					content: "∨"
-					// font-family: 'Font Awesome 5 Pro'
-					right: 20px
-					position: absolute
-					top: 0
+					flex-shrink: 0
+					width: 1.25rem
+					height: 1.25rem
+					margin-right: 0
+					display: flex
+					margin-left: auto
+					float: right
+					content: ""
+					background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'  fill='rgb(14, 41, 129)' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>")
+					background-repeat: no-repeat
+					background-size: 1.25rem
 			ul
 				display: none
 			&.showMenu
 				h6
 					&:after
-						content: "∧"
+						transform: rotate(180deg)
 				ul
 					display: block
 					a
 						font-size: 1rem
-					
-			
-
 
 // ≥576px
 +media-breakpoint-down(sm)
