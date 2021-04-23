@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<meta name="theme-color" content="#209CDC" />
+
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+
+	<title>элементы - Верстка MySwimming</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://myswimming.by/" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+
+	<link rel="icon" sizes="192x192" href="assets/img/icons/apple-touch-icon-192x192.png" />
+	<link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/icons/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/icons/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/apple-touch-icon-152x152.png " />
+	<link rel="apple-touch-icon" sizes="192х192" href="assets/img/icons/apple-touch-icon-192x192.png" />
+	<meta name="apple-mobile-web-app-title" content="Школа Плавания" />
+
+	<link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+
+	<link rel="stylesheet" href="assets/css/main.min.css" />
+</head>
+
+<body>
+
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg mb-2 sticky-top bg-white">
+	<div class="container" id="fixWidth">
+	
+		<a 
+			class="navbar-brand bs-0" 
+			href="#" 
+			title="Школа Плавания MySwimming"
+		>
+			<picture>
+				<source 
+					type="image/webp" 
+					srcset="assets/img/webp/shkola-plaveniya-logo.webp"
+				>
+				<source 
+					type="image/png" 
+					srcset="assets/img/shkola-plaveniya-logo.png"
+				>
+				<img 
+					src="assets/img/shkola-plaveniya-logo.png" 
+					class="navbar-brand__color" 
+					alt="Школа Плавания MySwimming"
+				>
+			</picture>
+			<picture>
+				<source 
+					type="image/webp" 
+					srcset="assets/img/webp/shkola-plaveniya-logo-wb.webp"
+				>
+				<source 
+					type="image/png" 
+					srcset="assets/img/shkola-plaveniya-logo-wb.png"
+				>
+				<img 
+					src="assets/img/shkola-plaveniya-logo-wb.png" 
+					class="navbar-brand__wb" 
+					alt="Школа Плавания MySwimming"
+				>
+			</picture>
+		</a>
+
+		<div class="navbar-toggler" id="navbarToggler">
+			<input 
+				type="checkbox" 
+				id="menuBurger" 
+				class="menuBurger visuallyHidden"
+			>
+			<label 
+				for="menuBurger" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#navbarsMswimming" 
+				aria-controls="navbarsMswimming" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation"
+			>
+				<div class="hamburger">
+					<span class="bar bar1"></span>
+					<span class="bar bar2"></span>
+					<span class="bar bar3"></span>
+				</div>
+			</label>
+		</div>
+
+		<div class="collapse navbar-collapse " id="navbarsMswimming">
+	
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+					<a 
+						class="nav-link" 
+						href="#" 
+						title="Тренеры Школы Плавания"
+					>
+						Тренеры
+					</a>
+				</li>
+				<li class="nav-item">
+					<a 
+						class="nav-link" 
+						href="#" 
+						title="Расписание занятий по плаванию"
+					>
+						Расписание 
+						<span class="d-lg-none d-xl-inline">
+							/ Цены
+						</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a 
+						class="nav-link" 
+						href="#" 
+						title="Бассейны"
+					>
+						Бассейны
+					</a>
+				</li>
+				<li class="nav-item">
+					<a 
+						class="nav-link" 
+						href="#" 
+						title="Информация от Школы Плавания"
+					>
+						Информация
+					</a>
+				</li>
+				<li class="nav-item">
+					<a 
+						class="nav-link" 
+						href="#" 
+						title="Контакты"
+					>
+						Контакты
+					</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a 
+						class="nav-link dropdown-toggle d-none d-lg-block bs-0" 
+						href="#" 
+						id="dropdownTlf" 
+						data-bs-toggle="dropdown" 
+						aria-haspopup="true" 
+						aria-expanded="false">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/>
+						</svg>
+						<span class="d-lg-none d-xl-inline"> 
+							+375
+						</span> 
+							(29) 898 56 38
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownTlf">
+						<a 
+							href="tel:+375298985638" 
+							class="dropdown-item konv_mts bs-0" 
+							onclick="yaCounter45395127.reachGoal('CallMeMTS'); 
+							return true;"
+						>
+							<i class="tel tel-mts"></i>
+							+375 (29) 898 56 38
+						</a>
+						<a 
+							href="tel:+375293885638" 
+							class="dropdown-item konv_velcom bs-0" 
+							onclick="yaCounter45395127.reachGoal('CallMeVELCOM'); 
+							return true;"
+						>
+							<i class="tel tel-vlc"></i>
+							+375 (29) 388 56 38
+						</a>
+					</div>
+				</li>
+			</ul>
+
+			<a 
+				href="#" 
+				class="btn btn-lg btn-outline-primary ms-4" 
+				title="Оплатить занятия в Школе Плавания"
+			>
+				Оплатить 
+				<span class="d-lg-none d-xxl-inline"> 
+					абонемент
+				</span>
+			</a>
+
+		</div>
+
+	</div>
+</nav>
+<!-- / NAV -->
+
+<!-- BREAD -->
+<section class="container-fluid mb-4 section__bread">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-12 col-xl-10">
+				<p class="mb-0" id="crumbs">
+
+					<a
+						href="/" 
+						title="Обучение плаванию, Школа Плавания — MySwimming в Минске" 
+					>
+						Школа плавания
+					</a>
+
+					<span class="delimiter bread">
+					•
+					</span>
+
+					<a 
+						href="#"
+						title=""
+						class="active"
+					>
+						Крошки
+					</a>
+
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="container section__main-content mb-4">
+
+	<!-- Блок Заголовки -->
+	<div class="row justify-content-md-center">
+		<div class="col-12 col-xl-10 pb-4">
+			<h1>Заголовок H1 </h1>
+			<h3>Заголовок H3 <a href="#" title="">Ссылка в заголовке</a></h3>
+		</div>
+	</div>
+
+	<!-- Блок таблица -->
+	<div class="row justify-content-md-center mb-4">
+		<div class="col-12 col-lg-10">
+			<div class="table-responsive raspisanie">
+			<table class="table table-borderless table-striped table-hover">
+			<thead>
+				<tr>
+				  <th scope="col" class="fst-th align-self-center">#</th>
+				  <th scope="col">Утро</th>
+				  <th scope="col">День</th>
+				  <th scope="col">Вечер</th>
+				</tr>
+			</thead>
+			  <tbody>
+				<tr class="table-info">
+					<th scope="row" class="fst-th align-middle">Пн.</th>
+					<td class="brd align-middle">—</td>
+					<td class="brd">
+						16:30&nbsp;-&nbsp;17:15&nbsp;(2&nbsp;гр.)<br>
+						17:30&nbsp;-&nbsp;18:15&nbsp;(2&nbsp;гр.)
+					</td>
+					<td>
+						18:30&nbsp;-&nbsp;19:15&nbsp;(2&nbsp;гр.)<br>
+						19:30&nbsp;-&nbsp;20:15&nbsp;(2&nbsp;гр.)
+					</td>
+				</tr>
+				<tr class="table-info info-op">
+					<th scope="row" class="fst-th align-middle">Вт.</th>
+					<td class="brd align-middle">—</td>
+					<td class="brd">
+						16:30&nbsp;-&nbsp;17:15&nbsp;(2&nbsp;гр.)<br>
+						17:30&nbsp;-&nbsp;18:15&nbsp;(2&nbsp;гр.)
+					</td>
+					<td>
+						18:30&nbsp;-&nbsp;19:15&nbsp;(2&nbsp;гр.)<br>
+						19:30&nbsp;-&nbsp;20:15&nbsp;(2&nbsp;гр.)
+					</td>
+				</tr>
+				<tr class="table-info">
+					<th scope="row" class="fst-th align-middle">Ср.</th>
+					<td class="brd align-middle">—</td>
+					<td class="brd">
+						—
+					</td>
+					<td>
+						—
+					</td>
+				</tr>
+				<tr class="table-info info-op">
+					<th scope="row" class="fst-th align-middle">Чт.</th>
+					<td class="brd align-middle">—</td>
+					<td class="brd">
+						16:30&nbsp;-&nbsp;17:15&nbsp;(2&nbsp;гр.)<br>
+						17:30&nbsp;-&nbsp;18:15&nbsp;(2&nbsp;гр.)
+					</td>
+					<td>
+						18:30&nbsp;-&nbsp;19:15&nbsp;(2&nbsp;гр.)<br>
+						19:30&nbsp;-&nbsp;20:15&nbsp;(2&nbsp;гр.)
+					</td>
+				</tr>
+				<tr class="table-info">
+					<th scope="row" class="fst-th align-middle">Пт.</th>
+					<td class="brd align-middle">—</td>
+					<td class="brd">
+						16:30&nbsp;-&nbsp;17:15&nbsp;(2&nbsp;гр.)<br>
+						17:30&nbsp;-&nbsp;18:15&nbsp;(2&nbsp;гр.)
+					</td>
+					<td>
+						18:30&nbsp;-&nbsp;19:15&nbsp;(2&nbsp;гр.)<br>
+						19:30&nbsp;-&nbsp;20:15&nbsp;(2&nbsp;гр.)
+					</td>
+				</tr>
+				<tr class="table-info info-op">
+					<th scope="row" class="fst-th align-middle">Сб.</th>
+					<td class="brd align-middle">—</td>
+					<td class="brd">
+						14:30&nbsp;-&nbsp;15:15&nbsp;(2&nbsp;гр.)<br>
+						15:30&nbsp;-&nbsp;16:15&nbsp;(2&nbsp;гр.)<br>
+						16:30&nbsp;-&nbsp;17:15&nbsp;(2&nbsp;гр.)<br>
+						17:30&nbsp;-&nbsp;18:15&nbsp;(2&nbsp;гр.)<br><br>
+						
+						13:30&nbsp;-&nbsp;14:30&nbsp;(Б.В.)<br>
+						14:15&nbsp;-&nbsp;15:15&nbsp;(Б.В.)<br>
+						15:00&nbsp;-&nbsp;16:00&nbsp;(Б.В.)
+					</td>
+					<td>
+						18:30&nbsp;-&nbsp;19:15&nbsp;(2&nbsp;гр.)<br>
+					</td>
+				</tr>
+				<tr class="table-info">
+					<td colspan="4">
+						Главный тренер клуба: <a href="/trenera-po-plavaniu/#elvira" title="Тренер по плаванию Бученкова Эльвира Адольфовна">Бученкова Эльвира Адольфовна</a>
+					</td>
+				</tr>
+			  </tbody>
+			</table>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Блок новости -->
+	<div class="row justify-content-md-center">
+		
+		<div class="col-12 col-lg-6 col-xl-5">
+			<a href="#" title="Обучение плаванию детей в Минске">
+			<img 
+				src="assets/img/news/news1.jpg" 
+				alt="Обучение плаванию детей в Минске" 
+				class="img-fluid" 
+			/>
+				<h3 class="pt-4 pb-2">
+					Обучение плаванию детей в Минске
+				</h3>
+			</a>
+			<p>
+				Наша Школа Плавания отлично подойдет как для взрослых, так и для детей. 
+				У нас можно научиться плавать и с пользой для здоровья проводить свой досуг, 
+				а при желании освоить новые стили или улучшить собственную технику плавания.
+			</p>
+		</div>
+		
+		<div class="col-12 col-lg-6 col-xl-5">
+			<a href="#" title="Набор в школу плавания">
+			<img 
+				src="assets/img/news/news2.jpg" 
+				alt="Набор в школу плавания" 
+				class="img-fluid">
+				<h3 class="pt-4 pb-2"
+			/>
+					Набор в школу плавания
+				</h3>
+			</a>
+			<p>
+				Известное стихотворение Чуковского «Мойдодыр» заканчивается такими строчками: 
+				«Всегда и везде – вечная слава воде!». Что может принести детишкам и взрослым 
+				большую пользу, чем обучение плаванию? А умеющие плавать знают наверняка - 
+				совершенству нет предела, было бы желание тренироваться и учиться новому.
+			</p>
+		</div>
+	</div>
+
+	<!-- Блок контактов --><br /><br />
+
+	<div class="row justify-content-md-center">
+		<div class="col-12 col-lg-6 col-xl-6">
+			<div  id="map"></div>
+		</div>
+		<div class="col-12 col-lg-6 col-xl-4">
+					<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<strong>Адрес арендной базы:</strong> <span itemprop="addressLocality">Минск</span>, <span itemprop="streetAddress">ул. Долгобродская 37</span>
+			</div>
+			<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" >
+				<meta itemprop="bestRating" content="5" >
+				<meta itemprop="ratingValue" content="4,90" >
+				<meta itemprop="ratingCount" content="78" >
+			</div>
+			<p>
+				<strong>Телефон:</strong> <a href="tel:+375298985638"><span itemprop="telephone" class="telephone">+375 29 898 56 38</span></a><br/>
+				<strong>Телефон:</strong> <a href="tel:+375293885638"><span itemprop="telephone" class="telephone">+375 29 388 56 38</span></a>
+			</p>
+			<p><strong>Цена от:</strong> <span itemprop="priceRange">14</span> BYN</p>
+			<p><a href="/obuchenie-plavaniu/" title="Обучение плаванию в Школе Плавания">Подробнее об услугах Школы плавания</a></p>
+			<p>Главные <a href="/trenera-po-plavaniu/" title="тренеры Школы Плавания">тренеры нашей Школы Плавания</a> - призеры и участники Олимпийских игр.
+			Им хорошо известна цена и вкус побед.
+			Наработавшие значительный профессиональный стаж, тренеры-чемпионы помогают развиться многим спортивным талантам.</p>
+		</div>
+	</div>
+
+
+</section>
+
+<!-- НАЧНИ свой путь -->
+<section class="jumbotron section__begin">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			
+			<div class="d-none d-lg-block col-lg-3 col-xl-2">
+	
+					<div class="parallax bg-lt ico-11" data-prl>
+						<div class="bg-ico ico-img-1" data-depth="1"></div>
+					</div>
+	
+			</div>
+			<div class="col-12 col-lg-6 col-xl-6 pt-4 text-center">
+				
+				<h5>
+					Начните путь
+				</h5>
+				<h2>
+					Начните свой путь в плавание <br/>вместе с профессионалами
+				</h2>
+				
+				<a  
+					data-bs-toggle="modal" 
+					data-bs-target="#modalZV" 
+					data-frame-load="zvk_myswm" 
+					class="btn btn-lg btn-primary my-4" 
+					title="Записаться в группу по плаванию"
+				>
+					Записаться в группу
+				</a>
+
+			</div>
+			<div class="d-none d-lg-block col-lg-3 col-xl-2">
+	
+					<div class="parallax bg-lr ico-22" data-prl>
+						<div class="bg-ico ico-img-2" data-depth="1"></div>
+					</div>
+	
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="d-none d-lg-block col-lg-5 col-xl-4">
+	
+					<div class="parallax bg-lt ico-33" data-prl>
+						<div class="bg-ico ico-img-3" data-depth="0.5"></div>
+					</div>
+	
+			</div>
+			<div class="d-none d-lg-block col-lg-5 col-xl-4">
+	
+					<div class="parallax bg-lt ico-44" data-prl>
+						<div class="bg-ico ico-img-4" data-depth="0.5"></div>
+					</div>
+	
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-6 d-md-block d-lg-none text-center">
+	
+					<img src="assets/img/img-svg/sq-ico-3.svg" alt="" class="sq-ico-3" >
+	
+			</div>
+			<div class="col-6 d-md-block d-lg-none text-center pt-4">
+	
+					<img src="assets/img/img-svg/sq-ico-4.svg" alt="" class="sq-ico-4 mt-4" >
+	
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+	<div class="container footer__up">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-3 order-3 order-md-3 order-lg-0">
+	
+				<picture>
+					<source 
+						type="image/webp" 
+						srcset="assets/img/webp/shkola-plaveniya-logo.webp"
+					>
+					<source type="image/png" 
+						srcset="assets/img/shkola-plaveniya-logo.png"
+					>
+					<img 
+						src="assets/img/shkola-plaveniya-logo.png" 
+						class="footer__logo w-100 mb-4" 
+						alt="Школа Плавания MySwimming"
+					>
+				</picture>
+
+				<p class="footer___requisites text-start">
+					
+					Частное предприятие «МОЙ ПЛАВАТЕЛЬНЫЙ ЦЕНТР», УНП 192954575. 
+					Свидетельство о гос.регистрации №192954575 от 14 августа 2017 года, 
+					
+					выданное Минским горисполкомом
+
+				</p>
+
+				<a href="#" class="fs-c bs-0 mb-4" title="Вопросы - ответы">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path d="M144 208c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm112 0c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm112 0c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zM256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z"/>
+					</svg>
+					Вопросы - ответы
+				</a>
+	
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-3 order-1 order-md-0  order-lg-1">
+				
+				<div class="footer__menuBlock">
+				
+					<h6>
+						Обучение плаванию<span class="d-none d-lg-inline">:</span>
+					</h6>
+
+					<ul>
+						<li>
+							<a href="#" title="Обучение плаванию детей от 6-8 лет">
+								Дети от 6-8 лет
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Обучение плаванию детей от 9 лет">
+								Дети от 9 лет
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Индивидуальные занятия по плаванию">
+								Индивидуальные занятия</a></li>
+						<li>
+							<a href="#" title="Обучение плаванию детей дошкольного возраста" class="mb-4">
+								Дети дошкольного возраста
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3  order-2 order-md-1  order-lg-2">
+				
+				<div class="footer__menuBlock">
+					<h6>
+						Информация<span class="d-none d-lg-inline">:</span>
+					</h6>
+					<ul>
+						<li>
+							<a href="#" title="О Школе Плавания">
+								О нас
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Бассейны">
+								Бассейн
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Расписание занятий по плаванию">
+								Расписание занятий
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Информация от Школы Плавания">
+								Информация
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<h6 class="mt-4">Наши соцсети:</h6>
+				<div class="soc">
+
+					<a 
+						href="https://www.instagram.com/myswimming.center" 
+						class="bs-0" 
+						title="Наш Instagram" 
+						target="_blank" 
+						rel="nofollow" 
+						onclick="yaCounter45395127.reachGoal('socinsta'); 
+						return true;"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+							<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+						</svg>
+					</a>
+
+					<a 
+						href="https://fb.me/MySwimming.center" 
+						class="bs-0" 
+						title="Мы на Facebook" 
+						target="_blank" 
+						rel="nofollow" 
+						onclick="yaCounter45395127.reachGoal('socFB'); 
+						return true;"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+							<path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+						</svg>
+					</a>
+
+					<a 
+						href="https://vk.com/MySwimming.center" 
+						class="bs-0" 
+						title="Мы VKontakte" 
+						target="_blank" 
+						rel="nofollow" 
+						onclick="yaCounter45395127.reachGoal('socVK'); 
+						return true;"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+							<path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/>
+						</svg>
+					</a>
+
+				</div>
+				
+			</div>
+
+			<!-- hCard Organization -->
+			<div 
+				class="col-12 col-md-12 col-lg-3 h-card order-0 order-md-2 order-lg-3" 
+				itemscope 
+				itemtype="http://schema.org/Organization"
+			>
+				<h6>
+					Адрес:
+				</h6>
+
+				<div 
+					class="fs" 
+					itemprop="address" 
+					itemscope 
+					itemtype="http://schema.org/PostalAddress">
+					<a 
+						href="#" 
+						class="fs-c"
+					>
+						<span itemprop="postalCode">
+							220070
+						</span>, 
+						<span itemprop="addressLocality">
+							Минск
+						</span>, 
+						<span itemprop="streetAddress">
+							Долгобродская 37
+						</span>
+					</a>
+				</div>
+			
+				<h6 class="mt-4">
+					Телефон:
+				</h6>
+
+				<a 
+					href="tel:+375298985638" 
+					class="fs konv_mts bs-0" 
+					onclick="yaCounter45395127.reachGoal('CallMeMTS'); 
+					return true;">
+					<i class="tel tel-mts"></i>
+					<span itemprop="telephone" class="telephone">
+						+375 (29) 898 56 38
+					</span>
+				</a>
+
+				<a 
+					href="tel:+375293885638" 
+					class="fs konv_velcom bs-0" 
+					onclick="yaCounter45395127.reachGoal('CallMeVELCOM'); 
+					return true;"
+				>
+					<i class="tel tel-vlc"></i>
+					<span itemprop="telephone" class="telephone">
+						+375 (29) 388 56 38
+					</span>
+				</a>
+				
+				<h6 class="mt-4">
+					Электронная потча:
+				</h6>
+
+				<a 
+					href="mailto:info@myswimming.center" 
+					class="fs bs-0 mb-4"
+				>
+					<span itemprop="email">
+						info@myswimming.center
+					</span>
+				</a>
+				<link itemprop="url" href="https://MySwimming.by">
+
+			</div>
+			<!-- / hCard Organization -->
+
+		</div>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-3 footer__copyright py-1">
+
+				</div>
+				<div class="col-12 col-md-8 col-lg-6 py-1">
+					
+					<a 
+						href="#" 
+						title="Публичный договор на оказание услуг" 
+						class="bs-0 fs-c"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+							<path d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"/>
+						</svg>
+						Публичный договор на оказание услуг
+					</a>
+	
+	
+				</div>
+				<div 
+					class="col-12 col-md-4 col-lg-3 footer__design py-1"
+				>
+					
+					Design 
+					<a
+						href="#" 
+						class="fs-c" 
+						target="_blank" 
+						title="Studio" 
+						rel="nofollow"
+					>
+						Studio
+					</a>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+<!-- MODAL -->
+<div 
+	class="modal fade" 
+	tabindex="-1" 
+	role="dialog" 
+	aria-hidden="true"
+>
+	<div 
+		class="modal-dialog modal-dialog-centered" 
+		role="document">
+
+	</div>
+</div>
+
+<!-- ****************************************************** SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+<script src="node_modules/parallax-js/dist/parallax.min.js"></script>
+<script src="node_modules/wow.js/dist/wow.min.js"></script>
+<script src="node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js" ></script>
+
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="assets/js/ymap.js"></script>
+
+</body>
+</html>

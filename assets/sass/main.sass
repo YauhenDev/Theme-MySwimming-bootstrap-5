@@ -32,6 +32,10 @@ a
 	&.bs-0
 		&:hover
 			background-size: 0
+.d-line
+	border-bottom: 1px solid #EBEBEB
+.fs24
+	font-size: 1.5rem
 
 /* H ******************************** */
 h1, h2, h3, h4, h5, h6
@@ -216,8 +220,6 @@ header
 			&:hover
 				height: 40px
 
-
-
 .section
 	/* PRICE */
 	&__price
@@ -277,9 +279,23 @@ header
 			svg
 				width: 40px
 				fill: $white
+	/*Bread */
+	&__bread
+		border-top: 1px solid $grey
+		border-bottom: 1px solid $grey
+		padding-top: 1.5rem
+		padding-bottom: 1.5rem
+		.delimiter
+			font-size: 1rem
+			color: $cyan
+			padding: .6rem .6rem 0 .6rem
+		a
+			&.active
+				color: #9fa9cd
 	
 	/* Начало */
 	&__begin
+		margin-top: 4rem 
 		margin-bottom: 4rem
 		.container
 			min-height: 550px
@@ -302,6 +318,20 @@ header
 			margin-top: 3rem
 			margin-right: auto
 			margin-left: auto
+	/* Inner */
+	&__inner
+		&__main
+			margin-top: 4rem
+			margin-bottom: 4rem
+		&-bg3
+			padding-top: 2rem
+		.of-hidden
+			overflow: hidden
+			img
+				position: relative
+				bottom: -100px
+				height: 345px
+				transform: rotate(-30deg)
 
 /* CARD */
 .card
@@ -369,6 +399,50 @@ header
 		position: absolute
 		top: auto
 		bottom: 20%
+
+/* FORM */
+#simple-form
+	margin-top: 2rem
+	.input-group-text
+		color: $danger
+		font-size: 1.5rem
+		padding: 0 1rem
+
+/* TABLE */
+table
+	&.table-striped
+		tr
+			&.table-info
+				border-bottom: 14px solid #fff
+
+.table-info.info-op, 
+.table-info.info-op>td, 
+.table-info.info-op>th
+	background-color: rgba(237,249,255,.2)!important
+
+.table-hover .table-info:hover>td, 
+.table-hover .table-info:hover>th
+	ground-color: #bee5eb!important
+
+.raspisanie 
+	tr.table-info 
+		td.brd
+			border-left: 14px solid #fff
+			border-right: 14px solid #fff
+	th
+		font-weight: 400
+.fst-th
+	width: 60px
+			
+/* MAP */
+#map
+	height: 330px
+	margin-top: 0
+	margin-bottom: 2rem
+
+[class*="ymaps-2"][class*="-ground-pane"]
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
+	-webkit-filter: grayscale(100%)
 
 /* FOOTER ************************** */
 .footer
