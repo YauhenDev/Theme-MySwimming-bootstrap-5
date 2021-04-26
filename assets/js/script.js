@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	function addPrice() {
 		price.forEach((item, cost) => {
 			if (item.matches(".price__individual")) {
-				cost = 36	// индивидуалка
+				cost = 34	// индивидуалка
 			} else {
 				cost = 14	// груповое
 			}
@@ -163,7 +163,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				<iframe 
 					class="embed-responsive-item" 
 					data-frame-group="zvk_myswm" 
-					data-frame-src="/zayavka.html" 
+					data-frame-src="zayavka.html" 
 					frameborder="0" 
 					allowfullscreen>
 				</iframe>
