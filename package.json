@@ -12,7 +12,8 @@
     "lodash.template": "^4.5.0",
     "parallax-js": "^3.1.0",
     "swiper": "^6.5.9",
-    "wow.js": "^1.2.2"
+    "wow.js": "^1.2.2",
+    "xmlhttprequest-ssl": "^1.6.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
