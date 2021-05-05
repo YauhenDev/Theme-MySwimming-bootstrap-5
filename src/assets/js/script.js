@@ -131,7 +131,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	//активация анимации wow.js
 	const wow = new WOW({
-		mobile:       false,       // default
+		mobile:       true,       // default
 	  });
 	  wow.init();
 
